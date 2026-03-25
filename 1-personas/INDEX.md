@@ -8,6 +8,7 @@ prefix: P
 
 | Key | Title | Status | Primary Interface |
 |-----|-------|--------|------------------|
+| [P-001](P-001-neocloud-ai-factory-developer.md) | Neocloud / AI Factory Developer | draft | IF-001, IF-002 |
 
 ---
 

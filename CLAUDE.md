@@ -1,8 +1,54 @@
 # PM Repository — AI Instructions
 
+## Product Context
+
+**Company:** LoadCrest, Inc.
+**Location:** Albuquerque, NM (9305 Camino del Sol NE, 87111)
+**Founded:** Q2 2025, grounded in 800VDC microgrid research from Sandia National Labs
+**Domain:** AI Data Center power infrastructure — 800VDC power delivery for AI factories
+
+**Core technology:** **SentinelT** — proprietary embedded software implementing a sub-250ms power control algorithm. SentinelT is the primary competitive differentiator. It makes real-time energy distribution decisions at the sub-250ms level (with microsecond/millisecond telemetry) to handle the violent, millisecond-scale step-loads of AI/GPU workloads that retrofitted EV-based DC systems cannot manage.
+
+**Product form factor:** Turnkey, pre-manufactured **20ft containerized Power Delivery unit** — sits physically just outside the data hall. Up to **4MW per container** (~$500k/MW CapEx, ~$350k/MW COGS). Modular building blocks mirror standard 4MVA utility interfaces. Supports MVAC, LVAC, and DC simultaneously.
+
+**Hardware strategy:** Proven commercial power platforms (COTS) in Horizon 1 → purpose-built, algorithm-optimized hardware in Horizon 3. Three-horizon roadmap per ADR-101.
+
+**Distribution standard:** 800VDC throughout all products (per ADR-100)
+
+**Business model:** **Energy-as-a-Service (EaaS)** — Pay for Performance
+- **$20,000/MW/year** — Primary Controls: Stabilization & Protection
+- **Tier 1** — Secondary Controls: Coordination
+- **Tier 2** — Integrated real-time digital controls, high-throughput monitoring, fault detection, automated recovery
+
+**Primary initial market:** Neocloud providers and AI factory developers, particularly off-grid and pre-grid data center deployments (fastest GTM path)
+
+**Key financial value props:**
+- Up to **80% reduction** in CapEx dedicated to buffering and filtering
+- Up to **$40M Day 1 CapEx savings** per 100MW deployment
+- **$7M/year OpEx reduction** (15%) per 100MW
+- **$3M/year efficiency gains** (5%) per 100MW
+- LoadCrest TCO: ~$129M vs. ~$350M legacy per 100MW building block
+
+**Validation:**
+- FOAK 800VDC deployment: Joint U.S. Air Force + Sandia National Labs (integrated grid, solar, gas gen, BESS, military loads)
+- Regulated utility deployment: Investor-owned utility, survived Hurricane Ian
+- Digital twin completed Q4 2025 with promising results
+
+**Current milestones:**
+- Q2 2026: HIL (Hardware-in-Loop) testing
+- Q3 2026: Sub-250ms control logic integration
+- Q4 2026: Commercial pilot with neocloud provider (1.2MW PoC)
+- Fundraise: **$4.8M seed round** (to complete PoC and deliver MVP hardware module)
+
+**Key partnerships:** Dyna Power (DC/DC converter, complete), IONATE (Solid-State Transformers), VEIR (super-conducting tech), Sandia National Labs, U.S. Air Force
+
+**Key contacts:** Gerro Prinsloo (CEO, gerro@loadcrest.com), John (john@loadcrest.com)
+
+---
+
 ## Purpose
 
-This is a product management repository using a structured artifact system. It contains requirements, specifications, and architectural decisions for a software product.
+This is a product management repository using a structured artifact system. It contains requirements, specifications, and architectural decisions for LoadCrest's hardware and software products.
 
 ## Structure
 

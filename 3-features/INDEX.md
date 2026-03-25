@@ -8,6 +8,7 @@ prefix: F
 
 | Key | Title | Status | Serves | Delivers |
 |-----|-------|--------|--------|----------|
+| [F-001](F-001-sentinelt-control-algorithm.md) | SentinelT — Sub-250ms Power Control Algorithm | draft | P-001 | VP-001, VP-002 |
 
 ---
 
