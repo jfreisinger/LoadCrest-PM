@@ -11,9 +11,9 @@ supersedes: null
 
 ## Context
 
-LoadCrest's Horizon 3 product targets the elimination of the Low-Frequency Transformer (LFT) from the MVAC→800VDC conversion chain, replacing it with a Solid-State Transformer (SST) — a fully software-controllable, intelligent power conversion interface co-designed with SentinelT. This represents the final integration step of LoadCrest's three-horizon strategy (per [ADR-101](ADR-101-cots-first-hardware-strategy.md)): collapsing the MVAC grid interface, the 800VDC bus stabilization layer, and active power quality management into a single, purpose-built platform.
+LoadCrest's Horizon 3 product targets the elimination of the Low-Frequency Transformer (LFT) from the MVAC→800VDC conversion chain, replacing it with a Solid-State Transformer (SST) — a fully software-controllable, intelligent power conversion interface co-designed with Sentinel. This represents the final integration step of LoadCrest's three-horizon strategy (per [ADR-101](ADR-101-cots-first-hardware-strategy.md)): collapsing the MVAC grid interface, the 800VDC bus stabilization layer, and active power quality management into a single, purpose-built platform.
 
-The strategic case for SST is compelling: direct MVAC→800VDC conversion at the facility entrance, full controllability of the grid interface, and the ability to embed SentinelT's active control intelligence natively into the conversion hardware rather than overlaying it on a passive LFT. However, SST technology is not mature enough to displace LFT-based approaches today.
+The strategic case for SST is compelling: direct MVAC→800VDC conversion at the facility entrance, full controllability of the grid interface, and the ability to embed Sentinel's active control intelligence natively into the conversion hardware rather than overlaying it on a passive LFT. However, SST technology is not mature enough to displace LFT-based approaches today.
 
 ### What the Academic Literature Shows (As of 2022)
 
@@ -60,12 +60,12 @@ LoadCrest's partnership with **IONATE** (Solid-State Transformers) is the primar
 
 ## Decision
 
-LoadCrest targets a **Modular Multilevel Converter (MMC)-based SST with a single medium-frequency transformer (MFT)** as the H3 architecture, developed in partnership with IONATE, with SentinelT embedded natively in the SST control layer. This architecture is selected over fully modular SSTs because:
+LoadCrest targets a **Modular Multilevel Converter (MMC)-based SST with a single medium-frequency transformer (MFT)** as the H3 architecture, developed in partnership with IONATE, with Sentinel embedded natively in the SST control layer. This architecture is selected over fully modular SSTs because:
 
 1. A single MFT reduces the isolation overhead that dominates the power density loss in fully modular designs
 2. The MMC topology enables high-voltage operation without requiring the full cell count of fully modular systems
 3. A single main isolation barrier simplifies protection coordination vs. distributed per-cell isolation
-4. The architecture is compatible with embedding SentinelT as the native control intelligence layer
+4. The architecture is compatible with embedding Sentinel as the native control intelligence layer
 
 ### H3 SST Performance Targets
 
@@ -75,7 +75,7 @@ LoadCrest targets a **Modular Multilevel Converter (MMC)-based SST with a single
 | System efficiency (ηΣ, MVAC to rack) | ~97.9% | ≥ 97.9% |
 | System power density | ~0.25 kW/dm³ | > 0.5 kW/dm³ |
 | Container footprint vs. H1 | Baseline | ~⅓ reduction |
-| DC output voltage regulation | Via SentinelT on LFT platform | Fully regulated via SST control |
+| DC output voltage regulation | Via Sentinel on LFT platform | Fully regulated via SST control |
 | Renewable integration capability | AC-coupled (conversion losses) | Direct DC-coupled (elimination of AC-DC-AC stages) |
 | MV grid compatibility | LFT provides isolation and decoupling | SST provides direct MVAC interface with active control |
 
@@ -84,14 +84,14 @@ LoadCrest targets a **Modular Multilevel Converter (MMC)-based SST with a single
 H3 SST development is initiated only when **all** of the following conditions are met:
 
 1. **10kV SiC device availability** — High-voltage SiC MOSFETs (10kV class) are commercially available from at least two qualified suppliers at volume pricing consistent with H3 cost targets
-2. **H1 performance ceiling reached** — COTS platform cannot execute SentinelT within target decision loop latency at full-load (per ADR-101 H3 triggers)
-3. **H2 algorithm characterization complete** — SentinelT computational requirements are fully characterized from H1/H2 field data; digital twin provides validated H3 hardware targets
-4. **IONATE co-development agreement** — Formal H3 co-development agreement with IONATE defining IP ownership, architecture control, and LoadCrest's SentinelT integration surface
+2. **H1 performance ceiling reached** — COTS platform cannot execute Sentinel within target decision loop latency at full-load (per ADR-101 H3 triggers)
+3. **H2 algorithm characterization complete** — Sentinel computational requirements are fully characterized from H1/H2 field data; digital twin provides validated H3 hardware targets
+4. **IONATE co-development agreement** — Formal H3 co-development agreement with IONATE defining IP ownership, architecture control, and LoadCrest's Sentinel integration surface
 5. **MV protection design validated** — A viable MV-side protection architecture is engineering-validated for the target grid voltage (13.2kV or equivalent); protection equipment cost is within H3 CapEx model
 
 ### What Does Not Change
 
-- SentinelT remains the primary IP and control intelligence layer — the SST is hardware executing SentinelT, not a replacement for it
+- Sentinel remains the primary IP and control intelligence layer — the SST is hardware executing Sentinel, not a replacement for it
 - 800VDC is the output distribution standard (per [ADR-100](ADR-100-800vdc-distribution-standard.md))
 - The EaaS business model applies — H3 hardware enables deeper Tier 2 service capabilities, not a different commercial model
 - Safety and regulatory certification requirements (MV-level adds NEMA, IEC 61850, arc-flash coordination requirements)
@@ -101,11 +101,11 @@ H3 SST development is initiated only when **all** of the following conditions ar
 ### Positive
 
 - **Footprint reduction:** SST with 10kV SiC targets >0.5 kW/dm³ vs. ~0.25 for LFT-based H1 — ~⅓ container footprint reduction consistent with ADR-101 H3 target
-- **Full controllability:** SST provides a software-controlled MVAC interface — SentinelT can manage active power, reactive power, harmonic compensation, and voltage regulation from a single intelligent layer, from grid to rack
+- **Full controllability:** SST provides a software-controlled MVAC interface — Sentinel can manage active power, reactive power, harmonic compensation, and voltage regulation from a single intelligent layer, from grid to rack
 - **Renewable integration advantage:** 800VDC architecture with SST enables direct DC coupling of PV, fuel cells, and storage — eliminates AC-DC-AC conversion stages that a 690VAC architecture cannot avoid (per Huber et al. Fig. 4)
 - **Grid service capability:** Fully controllable grid interface enables bidirectional power flow, virtual inertia, and VPP participation that passive LFT-based systems cannot provide
-- **IONATE partnership leverage:** LoadCrest accesses SST engineering expertise without building it internally; IONATE gains SentinelT integration as a differentiator for their SST platform
-- **Data moat extension:** SentinelT running natively on the SST platform generates microsecond-level data from the MVAC interface to the 800VDC bus — the richest dataset in the power delivery chain
+- **IONATE partnership leverage:** LoadCrest accesses SST engineering expertise without building it internally; IONATE gains Sentinel integration as a differentiator for their SST platform
+- **Data moat extension:** Sentinel running natively on the SST platform generates microsecond-level data from the MVAC interface to the 800VDC bus — the richest dataset in the power delivery chain
 
 ### Negative
 
@@ -115,14 +115,14 @@ H3 SST development is initiated only when **all** of the following conditions ar
 - **Switch count remains non-trivial:** MMC-based SST with 10kV SiC still requires ~60 switches for a 150kW three-phase system — control complexity and gate drive reliability at MV levels is non-trivial
 - **No full-scale industrial reference:** As of 2022, no full-scale industrial MMC-based SST with single MFT has been publicly documented. H3 carries first-mover engineering risk
 - **Component lifetime differential:** Power electronic assemblies have ~10-year typical lifetimes vs. ~40 years for LFTs — H3 SST platform requires designed-in serviceability and modular replacement paths to match LFT-based O&M economics
-- **IP boundary with IONATE:** SST hardware developed in partnership with IONATE requires explicit IP boundary agreements — the SentinelT control layer must remain LoadCrest IP, with clear licensing terms for IONATE's SST hardware
+- **IP boundary with IONATE:** SST hardware developed in partnership with IONATE requires explicit IP boundary agreements — the Sentinel control layer must remain LoadCrest IP, with clear licensing terms for IONATE's SST hardware
 
 ## Alternatives Considered
 
 | Alternative | Reason Not Chosen |
 |---|---|
 | **Fully modular SST (current state-of-art, LV SiC)** | 438 switches, 3,000 kg, 0.047 kW/dm³ system density — not a credible H3 target. Complexity without the power density or efficiency advantage over H1 LFT-based |
-| **Hybrid transformer (12-pulse + active filter) as permanent H3 target** | Achieves highest ηΣ today (98.2%) but provides unregulated DC output voltage and limited controllability — incompatible with SentinelT's full control surface requirements; also provides no footprint reduction vs. LFT-based |
+| **Hybrid transformer (12-pulse + active filter) as permanent H3 target** | Achieves highest ηΣ today (98.2%) but provides unregulated DC output voltage and limited controllability — incompatible with Sentinel's full control surface requirements; also provides no footprint reduction vs. LFT-based |
 | **Retain LFT permanently (no SST in H3)** | Valid fallback if 10kV SiC fails to mature on schedule; leaves footprint reduction and direct grid controllability on the table; limits VPP and grid service ambitions |
 | **FPGA/custom SoC as H3 (no SST hardware change)** | ADR-101 notes FPGA as a possible H3 entry point for compute — this is not mutually exclusive with SST. Both can be pursued; FPGA may precede SST if compute ceiling is hit first |
 | **MVDC interface (skip MVAC entirely)** | Future option if MVDC grid infrastructure matures; not in LoadCrest's near-term scope; MVDC distribution networks are not yet commercially deployed at data center scale |
@@ -132,7 +132,7 @@ H3 SST development is initiated only when **all** of the following conditions ar
 
 In addition to the ADR-101 H3 Migration Readiness Requirements, the following SST-specific conditions must be met:
 
-1. **SentinelT-SST integration surface defined** — Formal specification of the API/hardware interface between SentinelT firmware and the SST control layer, developed jointly with IONATE
+1. **Sentinel-SST integration surface defined** — Formal specification of the API/hardware interface between Sentinel firmware and the SST control layer, developed jointly with IONATE
 2. **MV protection architecture validated** — Engineering-validated protection scheme for 13.2kV (or target MV level) interface meeting IEC 61850 and applicable arc-flash standards
 3. **10kV SiC device qualification** — At least one 10kV SiC MOSFET family from a qualified supplier with datasheet-confirmed blocking voltage, RDS(on), and gate drive requirements compatible with MMC cell design
 4. **Thermal management design** — MMC cell thermal management validated for continuous operation at rated current; cooling system (liquid or forced-air) specified
@@ -145,7 +145,7 @@ In addition to the ADR-101 H3 Migration Readiness Requirements, the following SS
 |-----|-------|-------------|
 | [ADR-100](ADR-100-800vdc-distribution-standard.md) | 800VDC as Primary Power Distribution Standard | H3 SST delivers MVAC→800VDC conversion natively; 800VDC standard unchanged |
 | [ADR-101](ADR-101-cots-first-hardware-strategy.md) | Three-Horizon Product Evolution | H3 is the horizon this ADR governs; SST integration is the specific H3 architecture decision |
-| [F-001](../3-features/F-001-sentinelt-control-algorithm.md) | SentinelT — Sub-250ms Control Algorithm | SentinelT is embedded natively in H3 SST platform; this ADR governs the hardware it runs on |
+| [F-001](../3-features/F-001-sentinel-control-algorithm.md) | Sentinel — Sub-250ms Control Algorithm | Sentinel is embedded natively in H3 SST platform; this ADR governs the hardware it runs on |
 
 ## Source References
 

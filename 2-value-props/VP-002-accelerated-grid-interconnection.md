@@ -19,7 +19,7 @@ Grid interconnection is the single biggest deployment blocker for large AI data 
 
 The problem is not the load itself — it is the **unpredictability** of the load as seen from the grid interface. Current approaches have no mechanism to smooth the 800VDC bus before it reflects onto the utility grid.
 
-LoadCrest solves this at the source. SentinelT monitors the 800VDC bus at the microsecond level and actively manages energy distribution at the sub-250ms level, absorbing GPU-induced voltage sags and harmonic distortion internally before they reach the grid interface. From the utility's perspective, the LoadCrest container presents as a **stable, ramp-rate-compliant, power-quality-clean load** — exactly what is required to pass a System Impact Study.
+LoadCrest solves this at the source. Sentinel monitors the 800VDC bus at the microsecond level and actively manages energy distribution at the sub-250ms level, absorbing GPU-induced voltage sags and harmonic distortion internally before they reach the grid interface. From the utility's perspective, the LoadCrest container presents as a **stable, ramp-rate-compliant, power-quality-clean load** — exactly what is required to pass a System Impact Study.
 
 The downstream effects are significant:
 - Interconnection applications are more likely to be approved on the first submission
@@ -39,7 +39,7 @@ This value prop is also a **competitive moat**: grid interconnection expertise a
 
 | Feature | Contribution |
 |---------|-------------|
-| [F-001](../3-features/F-001-sentinelt-control-algorithm.md) | SentinelT's active bus stabilization and load-smoothing is the mechanism that produces a clean grid interface |
+| [F-001](../3-features/F-001-sentinel-control-algorithm.md) | Sentinel's active bus stabilization and load-smoothing is the mechanism that produces a clean grid interface |
 
 ## Metrics
 

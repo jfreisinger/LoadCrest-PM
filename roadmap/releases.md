@@ -5,7 +5,7 @@
 | Version | Name | Horizon | Status | Key Deliverables |
 |---------|------|---------|--------|-----------------|
 | v0.1 | Digital Twin | H1 Pre-commercial | Complete (Q4 2025) | Digital twin completed with promising results |
-| v0.2 | HIL Validation | H1 Pre-commercial | In Progress (Q2 2026) | Hardware-in-Loop testing of SentinelT on COTS platform |
+| v0.2 | HIL Validation | H1 Pre-commercial | In Progress (Q2 2026) | Hardware-in-Loop testing of Sentinel on COTS platform |
 | v0.3 | Sub-250ms Integration | H1 Pre-commercial | Planned (Q3 2026) | Sub-250ms control logic integrated and validated |
 | v1.0 | Commercial Pilot | H1 MVP | Planned (Q4 2026) | 1.2MW neocloud provider PoC — first revenue-generating deployment |
 | v1.x | MVP Scale | H1 | Roadmap | 4MW container production unit; EaaS Tier 1 live |

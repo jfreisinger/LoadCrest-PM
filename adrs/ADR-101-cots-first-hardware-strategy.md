@@ -41,11 +41,11 @@ Current generation hardware uses **proven commercial power platforms** — power
 - Safety certification pedigree (UL, IEC)
 - Supplier stability and supply chain resilience
 
-Deployments are **containerized** (20ft container, up to 4MW per unit, ~$500k/MW CapEx). The **SentinelT** algorithm runs on COTS embedded compute targeting a **sub-250ms control loop** — the validated performance specification for H1. Hardware is a validated, deployable platform — not yet a source of differentiation.
+Deployments are **containerized** (20ft container, up to 4MW per unit, ~$500k/MW CapEx). The **Sentinel** algorithm runs on COTS embedded compute targeting a **sub-250ms control loop** — the validated performance specification for H1. Hardware is a validated, deployable platform — not yet a source of differentiation.
 
 **H1 Key Milestones:**
 - Q2 2026: HIL (Hardware-in-Loop) testing on COTS platform
-- Q3 2026: Sub-250ms SentinelT control logic integration validated
+- Q3 2026: Sub-250ms Sentinel control logic integration validated
 - Q4 2026: Commercial pilot with neocloud provider (1.2MW PoC)
 - Seed raise: $4.8M to complete PoC and deliver MVP hardware module
 
@@ -76,15 +76,15 @@ H2 does not require new hardware — it runs on the H1 platform. However, the da
 
 ### Horizon 3 — Integrated AI Energy Hardware Platform *(Mid Term → Long Term)*
 
-**Next-generation architecture:** Purpose-built hardware platform embedding advanced LoadCrest control intelligence — the full vertical integration of orchestration, stabilization, and predictive control into a single, co-designed system. The H3 platform replaces the Low-Frequency Transformer (LFT) with a **Solid-State Transformer (SST)**, providing native MVAC→800VDC conversion with SentinelT embedded as the SST's active control intelligence layer. See [ADR-102](ADR-102-horizon-3-sst-integration-strategy.md) for the full SST architecture decision.
+**Next-generation architecture:** Purpose-built hardware platform embedding advanced LoadCrest control intelligence — the full vertical integration of orchestration, stabilization, and predictive control into a single, co-designed system. The H3 platform replaces the Low-Frequency Transformer (LFT) with a **Solid-State Transformer (SST)**, providing native MVAC→800VDC conversion with Sentinel embedded as the SST's active control intelligence layer. See [ADR-102](ADR-102-horizon-3-sst-integration-strategy.md) for the full SST architecture decision.
 
 Migration to custom hardware is initiated when one or more of the following triggers is met:
 
 | Trigger | Description |
 |---|---|
-| **Performance ceiling** | COTS compute cannot execute SentinelT within the target sub-250ms decision loop under full-load conditions |
+| **Performance ceiling** | COTS compute cannot execute Sentinel within the target sub-250ms decision loop under full-load conditions |
 | **Volume threshold** | Annual unit volume makes custom NRE (Non-Recurring Engineering) cost-effective vs. COTS BOM |
-| **Algorithm-hardware co-optimization** | A specific SentinelT enhancement is only achievable with purpose-built silicon, FPGA, or custom board layout |
+| **Algorithm-hardware co-optimization** | A specific Sentinel enhancement is only achievable with purpose-built silicon, FPGA, or custom board layout |
 | **Supply chain risk** | A critical COTS component becomes single-sourced, end-of-life, or geopolitically at risk |
 | **Competitive parity** | A competitor achieves a hardware-level performance advantage that cannot be matched on COTS |
 | **10kV SiC maturity** | High-voltage SiC (10kV) devices reach commercial availability from ≥2 qualified suppliers — the enabling technology for viable SST architecture (per ADR-102) |
@@ -99,7 +99,7 @@ Migration to custom hardware is initiated when one or more of the following trig
 - More predictable and strategically controlled supply chain
 - Native integration of orchestration, stabilization, and predictive control layers into SST platform
 
-**Key H3 partnership:** IONATE (Solid-State Transformers) — specialized SST engineering co-development; SentinelT integration surface defined jointly.
+**Key H3 partnership:** IONATE (Solid-State Transformers) — specialized SST engineering co-development; Sentinel integration surface defined jointly.
 
 **Strategic impact:** Positions LoadCrest as a **vertically integrated infrastructure provider for AI-scale energy systems** — the only platform combining purpose-built SST hardware with an embedded sub-250ms AI factory power control algorithm.
 
@@ -156,7 +156,7 @@ For the H3 custom migration to succeed when triggered, the following must be tru
 |-----|-------|-------------|
 | [ADR-100](ADR-100-800vdc-distribution-standard.md) | 800VDC as Primary Power Distribution Standard | Sister decision — 800VDC standard holds across all three horizons |
 | [ADR-102](ADR-102-horizon-3-sst-integration-strategy.md) | Horizon 3 SST Integration Strategy | Governs the specific H3 SST architecture, enabling conditions, and IONATE partnership |
-| [F-001](../3-features/F-001-sentinelt-control-algorithm.md) | SentinelT — Sub-250ms Control Algorithm | Runs on COTS in H1; co-optimized with SST hardware in H3 |
+| [F-001](../3-features/F-001-sentinel-control-algorithm.md) | Sentinel — Sub-250ms Control Algorithm | Runs on COTS in H1; co-optimized with SST hardware in H3 |
 
 ## Source References
 

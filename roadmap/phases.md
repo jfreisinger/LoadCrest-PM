@@ -29,14 +29,14 @@
 | Q2 2025 | LoadCrest founded — grounded in Sandia National Labs 800VDC research | ✅ Complete |
 | Q4 2025 | Digital twin completed with promising results | ✅ Complete |
 | Q2 2026 | HIL (Hardware-in-Loop) testing | 🔄 In Progress |
-| Q3 2026 | Sub-250ms SentinelT control logic integration | ⏳ Planned |
+| Q3 2026 | Sub-250ms Sentinel control logic integration | ⏳ Planned |
 | Q4 2026 | Commercial pilot — 1.2MW neocloud provider PoC | ⏳ Planned |
 | Q4 2026 | $4.8M seed round close | ⏳ Planned |
 
 ### Key Artifacts
 - ADR-100: 800VDC as Primary Power Distribution Standard
 - ADR-101: Three-Horizon Product Evolution Strategy
-- F-001: SentinelT — Sub-250ms Control Algorithm
+- F-001: Sentinel — Sub-250ms Control Algorithm
 - P-001: Neocloud / AI Factory Developer
 
 ---

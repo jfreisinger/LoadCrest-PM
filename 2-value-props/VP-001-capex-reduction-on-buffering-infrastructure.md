@@ -17,7 +17,7 @@ LoadCrest eliminates up to 80% of the CapEx AI factory developers currently spen
 
 A 100MW AI data center built on traditional architecture requires approximately **$50M in filtering and stabilizing power electronics** just to deliver clean, stable power to the racks. This cost exists entirely because today's approach — retrofitting EV-grade DC components or layering AC conversion stages — cannot natively handle the violent, millisecond-scale transient loads of AI/GPU workloads. The gap is filled with expensive, custom-engineered buffering infrastructure.
 
-LoadCrest eliminates this gap at the source. The SentinelT control algorithm manages power quality and transient response in real time at the sub-250ms level, absorbing the step-loads that would otherwise require passive buffering hardware. The EPC can downsize or eliminate capacitor banks, oversized transformers, and custom filtering equipment that would normally be specified as a safety margin against power instability.
+LoadCrest eliminates this gap at the source. The Sentinel control algorithm manages power quality and transient response in real time at the sub-250ms level, absorbing the step-loads that would otherwise require passive buffering hardware. The EPC can downsize or eliminate capacitor banks, oversized transformers, and custom filtering equipment that would normally be specified as a safety margin against power instability.
 
 The financial impact is immediate and measurable. In year one alone, LoadCrest saves a 100MW deployment:
 - Up to **$40M in CapEx** from eliminated buffering and filtering equipment
@@ -38,7 +38,7 @@ For neoclouds and AI factory developers operating under investor pressure to dep
 
 | Feature | Contribution |
 |---------|-------------|
-| [F-001](../3-features/F-001-sentinelt-control-algorithm.md) | SentinelT's sub-250ms transient response is the mechanism that eliminates the need for passive buffering hardware |
+| [F-001](../3-features/F-001-sentinel-control-algorithm.md) | Sentinel's sub-250ms transient response is the mechanism that eliminates the need for passive buffering hardware |
 
 ## Metrics
 

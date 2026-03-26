@@ -23,6 +23,7 @@ PREFIX-NNN
 | IF     | Interface              |
 | NFR    | Non-Functional Req     |
 | ADR    | Architectural Decision |
+| SK     | Skill (Playbook)       |
 
 ---
 
