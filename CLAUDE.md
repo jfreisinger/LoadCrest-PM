@@ -133,6 +133,34 @@ Claude will:
 
 Claude will never promote an artifact without explicit human confirmation of the summary list.
 
+## NDA Review Workflow
+
+Tell Claude: _"Review the NDA at [path]"_ or paste the NDA text directly.
+
+Claude will:
+1. Read `legal/NDA-CRITERIA.md` to load LoadCrest's evaluation rubric
+2. Extract the full text of the provided NDA (using the PDF skill if `.pdf`)
+3. Evaluate all 21 criteria — assigning **PASS**, **FLAG**, or **REJECT** to each
+4. Check for Quick Disqualifiers first — surface any auto-REJECT items immediately
+5. Identify any non-standard clauses not covered by the criteria
+6. Propose specific redlines for every FLAG and REJECT item
+7. Write the completed review to `legal/reviews/YYYY-MM-DD-[counterparty-slug]-nda.md` using `NDA-REVIEW-TEMPLATE.md`
+8. Present a summary to the human before saving
+
+Claude will **never** approve, sign, or recommend execution of an NDA — only surface findings for human decision. All reviews include a human sign-off block.
+
+### Running a review
+
+```
+Review the NDA at H:\path\to\counterparty-nda.pdf
+```
+or
+```
+Review this NDA: [paste text]
+```
+
+---
+
 ## When Modifying Artifacts
 
 1. Update frontmatter if relationships change
