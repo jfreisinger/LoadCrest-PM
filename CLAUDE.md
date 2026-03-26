@@ -7,7 +7,7 @@
 **Founded:** Q2 2025, grounded in 800VDC microgrid research from Sandia National Labs
 **Domain:** AI Data Center power infrastructure — 800VDC power delivery for AI factories
 
-**Core technology:** **SentinelT** — proprietary embedded software implementing a sub-250ms power control algorithm. SentinelT is the primary competitive differentiator. It makes real-time energy distribution decisions at the sub-250ms level (with microsecond/millisecond telemetry) to handle the violent, millisecond-scale step-loads of AI/GPU workloads that retrofitted EV-based DC systems cannot manage.
+**Core technology:** **Sentinel** — proprietary embedded software implementing a sub-250ms power control algorithm. Sentinel is the primary competitive differentiator. It makes real-time energy distribution decisions at the sub-250ms level (with microsecond/millisecond telemetry) to handle the violent, millisecond-scale step-loads of AI/GPU workloads that retrofitted EV-based DC systems cannot manage.
 
 **Product form factor:** Turnkey, pre-manufactured **20ft containerized Power Delivery unit** — sits physically just outside the data hall. Up to **4MW per container** (~$500k/MW CapEx, ~$350k/MW COGS). Modular building blocks mirror standard 4MVA utility interfaces. Supports MVAC, LVAC, and DC simultaneously.
 
@@ -49,6 +49,12 @@
 ## Purpose
 
 This is a product management repository using a structured artifact system. It contains requirements, specifications, and architectural decisions for LoadCrest's hardware and software products.
+
+## Ubiquitous Language
+
+All domain terms — technical, business, product, and market — are defined in [`glossary/GLOSSARY.md`](glossary/GLOSSARY.md). That document is the authoritative source. When a term in an artifact or conversation is ambiguous, resolve it using the glossary. When a new term is introduced, add it to the glossary before using it in artifacts.
+
+---
 
 ## Structure
 

@@ -43,7 +43,7 @@ The OCP Diablo specification (800VDC + Sidecar/Power Rack architecture) is becom
 
 1. **Site evaluation** — assessing whether a site can support 800VDC distribution and grid interconnection; LoadCrest's grid-buffer capability directly accelerates this
 2. **Power system procurement** — evaluating, specifying, and procuring the power delivery system for a 100MW+ facility; LoadCrest replaces a complex multi-vendor stack with a single containerized unit
-3. **Grid interconnection** — submitting System Impact Studies to the utility; SentinelT's load-smoothing ensures a clean, predictable load profile
+3. **Grid interconnection** — submitting System Impact Studies to the utility; Sentinel's load-smoothing ensures a clean, predictable load profile
 4. **Commissioning and go-live** — deploying and validating the power system; LoadCrest's pre-manufactured, pre-certified container reduces commissioning time significantly
 5. **Ongoing operations** — monitoring power quality, uptime, and efficiency; covered by EaaS Tier 1/2 service levels
 
@@ -68,7 +68,7 @@ The EaaS model converts a large capital outlay into a predictable operational co
 |-----|-------|-------------|
 | [VP-001](../2-value-props/VP-001-capex-reduction-on-buffering-infrastructure.md) | CapEx Reduction on Power Buffering Infrastructure | Primary financial value delivered to this persona |
 | [VP-002](../2-value-props/VP-002-accelerated-grid-interconnection.md) | Accelerated Grid Interconnection | Removes the #1 deployment blocker for this persona |
-| [F-001](../3-features/F-001-sentinelt-control-algorithm.md) | SentinelT — Sub-250ms Control Algorithm | Core capability that solves the microsecond step-load problem |
+| [F-001](../3-features/F-001-sentinel-control-algorithm.md) | Sentinel — Sub-250ms Control Algorithm | Core capability that solves the microsecond step-load problem |
 | [ADR-100](../adrs/ADR-100-800vdc-distribution-standard.md) | 800VDC Distribution Standard | Defines the architecture this persona is deploying |
 
 ## Source References

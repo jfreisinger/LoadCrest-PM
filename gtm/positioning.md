@@ -16,7 +16,7 @@ AI Data Center Power Infrastructure — purpose-built 800VDC power delivery and 
 
 ## Key Differentiator
 
-LoadCrest is the only purpose-built, intelligent power delivery system for 800VDC AI factories. The **SentinelT** sub-250ms control algorithm — validated in real-world 800VDC deployments with Sandia National Labs and the U.S. Air Force — is embedded in a turnkey, containerized hardware platform that sits just outside the data hall.
+LoadCrest is the only purpose-built, intelligent power delivery system for 800VDC AI factories. The **Sentinel** sub-250ms control algorithm — validated in real-world 800VDC deployments with Sandia National Labs and the U.S. Air Force — is embedded in a turnkey, containerized hardware platform that sits just outside the data hall.
 
 Competitors either sell hardware without intelligent control (legacy power electronics vendors) or force customers to build expensive, customized "Frankenstein" systems by adapting EV-grade DC components. LoadCrest delivers a complete, deployable system with an EaaS business model that aligns LoadCrest's incentives with customer uptime and efficiency.
 
@@ -37,14 +37,14 @@ LoadCrest saves a **100MW AI data center ~$40M in year one** through CapEx reduc
 | Alternative | Our Advantage |
 |-------------|--------------|
 | Legacy 480VAC systems (Eaton, Schneider, Vertiv) | 800VDC-native; no AC conversion losses; designed for AI rack densities |
-| Retrofitted EV DC components ("Frankenstein" builds) | Purpose-built for AI workload step-loads; SentinelT handles microsecond transients EV systems cannot |
+| Retrofitted EV DC components ("Frankenstein" builds) | Purpose-built for AI workload step-loads; Sentinel handles microsecond transients EV systems cannot |
 | Custom in-house power engineering | Turnkey, pre-certified, deployable in weeks not years; EaaS model removes CapEx burden |
-| Traditional DC power electronics vendors (no intelligence) | SentinelT algorithm provides active stabilization, grid buffering, and fault management — not passive hardware |
+| Traditional DC power electronics vendors (no intelligence) | Sentinel algorithm provides active stabilization, grid buffering, and fault management — not passive hardware |
 | Doing nothing / delaying 800VDC transition | Grid interconnection risk; $50M+ in avoidable filtering spend; competitive disadvantage as OCP Diablo becomes standard |
 
 ## Positioning Statement
 
-*For AI factory developers and neocloud providers who need to deploy 800VDC data centers faster and cheaper than the current "Frankenstein" approach allows, LoadCrest provides a turnkey, containerized power delivery system powered by the SentinelT control algorithm — the only purpose-built solution that makes 800VDC AI factories viable, safe, grid-compliant, and rapidly deployable. Unlike retrofitted EV systems or legacy AC infrastructure, LoadCrest was designed from the ground up for the violent, millisecond-scale power demands of AI/GPU workloads.*
+*For AI factory developers and neocloud providers who need to deploy 800VDC data centers faster and cheaper than the current "Frankenstein" approach allows, LoadCrest provides a turnkey, containerized power delivery system powered by the Sentinel control algorithm — the only purpose-built solution that makes 800VDC AI factories viable, safe, grid-compliant, and rapidly deployable. Unlike retrofitted EV systems or legacy AC infrastructure, LoadCrest was designed from the ground up for the violent, millisecond-scale power demands of AI/GPU workloads.*
 
 ## Go-to-Market Entry Point
 
