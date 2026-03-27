@@ -183,6 +183,28 @@ Superconducting technology partner. Relevant to future high-density power transm
 
 ---
 
+## Culture & Collaboration
+
+**Character Strengths**
+A framework from Positive Psychology (VIA Institute on Character) identifying 24 universal human strengths (e.g., curiosity, perseverance, fairness, creativity) that can be measured and deliberately applied. Teams that know each other's top strengths and design work to engage them consistently outperform those that don't. Used at LoadCrest to inform how individuals contribute in collaborative sessions.
+
+**Collaborative Emergence**
+The phenomenon where a group produces ideas, solutions, or insights that no individual member could have reached alone. First rigorously studied by Keith Sawyer (*Group Genius*, 2007) in jazz, improv theater, sports teams, and engineering teams. Collaborative emergence is the primary output of Group Flow — and the reason LoadCrest treats in-person sessions as a strategic capability. See [SK-004](../skills/SK-004-group-flow-facilitation.md).
+
+**Group Flow**
+A collective state of deep engagement and creative momentum in which a group performs at a level beyond any individual's capacity. First described by Keith Sawyer, building on Csikszentmihalyi's individual flow. Requires specific conditions (clear shared goal, equal participation, close listening, psychological safety, productive challenge) and is significantly more likely in in-person settings than remote ones. The organizing principle behind LoadCrest's approach to collaborative sessions. See [culture/GROUP-FLOW.md](../culture/GROUP-FLOW.md) and [SK-004](../skills/SK-004-group-flow-facilitation.md).
+
+**PERMA**
+The five pillars of well-being from Martin Seligman's Positive Psychology framework: **P**ositive Emotions, **E**ngagement, **R**elationships, **M**eaning, **A**chievement. Used at LoadCrest to evaluate whether collaborative sessions are designed to leave participants energized and productive, not depleted.
+
+**Positive Psychology**
+A branch of psychology concerned with the conditions that allow individuals, groups, and institutions to flourish — as opposed to traditional clinical psychology's focus on pathology. Founded by Martin Seligman and Mihaly Csikszentmihalyi in the late 1990s. Informs LoadCrest's approach to team culture, collaborative session design, and partner engagement.
+
+**Psychological Safety**
+The shared belief within a team that it is safe to speak up, take risks, and voice incomplete ideas without fear of humiliation or retaliation. Coined by Amy Edmondson (Harvard Business School). A prerequisite for Group Flow — without it, people self-censor and collaborative emergence cannot occur.
+
+---
+
 ## PM Methodology
 
 **ADR (Architectural Decision Record)**
